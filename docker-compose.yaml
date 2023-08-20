@@ -1,0 +1,20 @@
+
+  version:  '3'
+  services:
+    db:
+      image:  mongo:5
+      restart:  always
+      ports:
+        - 27017:27017
+        # el priemro es el puerto externo del pc
+        # el segundo es el puerto interno del contenedor
+      environment:
+        MONGODB_DATABASE: nest-pokemon
+        # si quiero hacer persistente mi base de datos
+        # uso un volumen local en el pc no en el contenedor
+      volumes:
+        - ./mongo:/data/db
+        # automaticamente crea la carpeta ./mongo en local
+        # y la conecta al /data/db dentro del container que es donde almacena mongodb
+
+
