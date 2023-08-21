@@ -17,7 +17,7 @@ import { SeedModule } from 'src/seed/seed.module';
     ]),
     
   ],
-  exports: [PokemonService,]
+  exports: [MongooseModule, PokemonService,]
 
 })
 export class PokemonModule {}
