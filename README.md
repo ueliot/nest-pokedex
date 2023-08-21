@@ -4,8 +4,10 @@
 
 
 # Ejecutar en desarrollo
-1.- clonar el repositorio
-2.-Ejecutar
+
+1.- clonar el repositorio 
+
+2.- Ejecutar 
 ```
 npm install
 ```
